@@ -101,7 +101,7 @@ def draw_graph(graph, edge_types, d, f):
 
     animation_speed = 0.9  # Velocidade da animação (em segundos)
     lines = []
-    for edge, edge_type in edge_types.items():
+    for edge, edge_type in edge_types.items(): #mostra as bolinhas na tela
         u, v = edge
         x1, y1 = vertex_coords[list(graph.keys()).index(u)]
         x2, y2 = vertex_coords[list(graph.keys()).index(v)]
