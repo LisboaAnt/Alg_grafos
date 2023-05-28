@@ -1,5 +1,5 @@
 # Alg_grafos
-    Implemente um algoritmo que carregue as informações de um grafo direcionado que estão
+Implemente um algoritmo que carregue as informações de um grafo direcionado que estão
 em um arquivo de texto (padrão de arquivo visto em sala). Em seguida execute o algoritmo DFS no
 grafo carregado obedecendo os itens a seguir:
 ## !Objetivos:
