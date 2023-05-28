@@ -18,6 +18,6 @@ grafo carregado obedecendo os itens a seguir:
  -https://github.com/LisboaAnt/Alg_grafos
 
 ## 🛠 Technologies
-- Java
+- Python
 ## 💛 Contact
 antoniol.carvalho49@gmail.com
