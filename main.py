@@ -84,7 +84,7 @@ def draw_graph(graph, edge_types, d, f):
     #Utiliza a biblioteca tkinter para desenhar o grafo na tela
     #Recebe como entrada o grafo, os tipos de arestas, e as informacoes de descoberta e finalizacao de cada vertice obtidos pela funcao dfs
     window = tk.Tk()
-    canvas = tk.Canvas(window, width=500, height=500)
+    canvas = tk.Canvas(window, width=500, height=500) #Janela
     canvas.pack()
 
     num_vertices = len(graph)
