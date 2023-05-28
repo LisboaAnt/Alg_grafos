@@ -15,7 +15,7 @@ grafo carregado obedecendo os itens a seguir:
     executado.
 
 ## Link de acesso
- -https://github.com/LisboaAnt/POO-Java/tree/main/TrabBovinos
+ -https://github.com/LisboaAnt/Alg_grafos
 
 ## 🛠 Technologies
 - Java
