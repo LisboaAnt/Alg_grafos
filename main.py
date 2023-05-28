@@ -1,5 +1,5 @@
 #Importante!!!!
-#Antônio Lisboa De cravalho 535865
+#Antônio Lisboa De cravalho - 535865
 #São as 6 da manhã e vou dar uma pequena explicada de como funciona:
 #Ele inicia pelo vertice com maior grau de saida, se empatar acho q inicia por ordem alfabetica
 #Depois de iniciar ele busca o proximo vertice Branco, se tiver mais de um ele pega na ordem
