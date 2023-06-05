@@ -99,7 +99,7 @@ def draw_graph(graph, edge_types, d, f):
         vertex_objects[vertex] = canvas.create_oval(x-15, y-15, x+15, y+15, fill='white', outline='black')
         canvas.create_text(x, y, text=vertex)
 
-    animation_speed = 0.9  # Velocidade da animação (em segundos)
+    animation_speed = 10  # Velocidade da animação (em segundos)
     lines = []
     for edge, edge_type in edge_types.items(): #mostra as setas na tela
         u, v = edge
@@ -135,14 +135,15 @@ def draw_graph(graph, edge_types, d, f):
         y = canvas.winfo_height() + 480
 
         d_text = "d: "
-        f_text = "f: "
+        f_text = " f: "
 
         for u in d:
-            d_text += f"{d[u]} "
-            f_text += f"{f[u]} "
+            d_text += f"{str(d[u]).zfill(2)} "
+            f_text += f"{str(f[u]).zfill(2)} "
 
-        canvas.create_text(x, y, text=d_text, anchor="sw")
-        canvas.create_text(x, y - 15, text=f_text, anchor="sw")
+        canvas.create_text(x, y, text=f_text, anchor="sw")
+        canvas.create_text(x, y- 15, text=d_text, anchor="sw")
+        
 
         canvas.create_text(+250,+480,text="Use 'a' para vançar e 'd' para voltar a animação",anchor="sw")
 
@@ -158,7 +159,7 @@ def draw_graph(graph, edge_types, d, f):
         ii = 5
         for u in graph:
             ii +=15
-            canvas.create_text(+10,ii,text=u+" {"+"d: "+str(d[u])+ " f: "+str(f[u])+"}",anchor="sw")
+            canvas.create_text(+10,ii,text=u+" {"+"d: "+str(d[u]).zfill(2)+ " f: "+str(f[u])+"}",anchor="sw")
 
 
     def bind_keys(event):
